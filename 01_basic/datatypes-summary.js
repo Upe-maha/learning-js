@@ -1,4 +1,4 @@
-// Primitive
+// #############Primitive
 
 // 7 types : String, Number, Boolean, null, undefined, Symbol, Bigint
 
@@ -24,7 +24,7 @@ const bigNumber = 123456789101112n
 
 
 
-// Reference (Non-primitive)
+//********  Reference (Non-primitive)
 
 //Array, Objects, Function, //Datatype are knoen as function objects in javascript
 
@@ -45,3 +45,28 @@ const myFunction = function () {
 }
 // console.log(typeof myFunction) // returns "function", because functions are also objects in JavaScript
 
+
+
+//******* Memory ***************
+
+// Stack (Primitive), Heap (Non-primitive)
+
+//stack
+let myName = "Upendra" // stored in stack
+let anotherName = myName // anotherName points to the same value in stack
+anotherName = "Shaktiman" // now anotherName points to a new value in stack, myName still points to "Upendra"
+console.log(myName)
+console.log(anotherName)
+
+//heap
+let userOne = {
+  email: "upendra@google.com",
+  id: 10,
+} // stored in heap
+
+let userTwo = userOne
+
+// userTwo.email = "mahatara@gmail.com"
+
+console.log(userOne.email) // "
+console.log(userTwo.email) // "
