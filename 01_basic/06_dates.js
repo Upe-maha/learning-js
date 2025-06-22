@@ -28,7 +28,14 @@ let newDate = new Date()
 console.log(newDate);
 console.log(newDate.getMonth() + 1);
 console.log(newDate.getDay());
+// String interpolation
 
+// `${newDate.getMonth()} and the time `
+
+newDate.toLocaleString('default', {
+  weekday: "long",
+  // timeZone: ''
+})
 
 
 
