@@ -64,3 +64,18 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 
+
+//Destructuring
+
+const course = {
+  coursename: "JavaScript",
+  price: "999",
+  courseInstructor: "Hitesh"
+}
+
+// console.log(course.courseInstructor)// not much liner code while reperting
+
+const { courseInstructor } = course
+console.log(courseInstructor)
+const { courseInstructor: instructor } = course
+console.log(instructor)
