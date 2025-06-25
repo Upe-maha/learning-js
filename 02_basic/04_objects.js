@@ -65,7 +65,7 @@ console.log(Object.entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 
 
-//Destructuring
+//Destructuring of object
 
 const course = {
   coursename: "JavaScript",
@@ -77,5 +77,25 @@ const course = {
 
 const { courseInstructor } = course
 console.log(courseInstructor)
+
 const { courseInstructor: instructor } = course
 console.log(instructor)
+
+// desturcturing in react
+const navbar = ({ company }) => {
+
+}
+navbar(company = "Khampa")
+
+// API JSON:
+
+// {
+//   "name": "Upendra",
+//   "course": "JS",
+//   "price": "Free"
+// }
+
+// [
+//   {},
+//   {:{}},
+// ]
